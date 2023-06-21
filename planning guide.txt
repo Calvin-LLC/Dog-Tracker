@@ -1,0 +1,51 @@
+Pet location tracker:
+
+- table name: pet name	// string, holds name of the pet itself
+- data : pet data		// string, holds JSON contents of tracker
+
+- post_data:
+{ "pet_name":"skye" }
+
+- data recieved from post_data: 
+{ "location":[
+{"longitude":37.12345, "latitude":85.123456, "animation":1},
+{"longitude":12.41234, "latitude":34.134134, "animation":2},
+{"longitude":37.12345, "latitude":85.123456, "animation":3},
+{"longitude":12.41234, "latitude":34.134134, "animation":4},
+{"longitude":37.12345, "latitude":85.123456, "animation":5},
+{"longitude":12.41234, "latitude":34.134134, "animation":6},
+{"longitude":37.12345, "latitude":85.123456, "animation":7},
+{"longitude":12.41234, "latitude":34.134134, "animation":8},
+{"longitude":37.12345, "latitude":85.123456, "animation":9},
+{"longitude":12.41234, "latitude":34.134134, "animation":10}
+]}
+
+{ "location":[
+{"longitude":37.12345, "latitude":85.123456, "animation":1},
+{"longitude":37.12346, "latitude":85.123456, "animation":2},
+{"longitude":37.12347, "latitude":85.123456, "animation":3},
+{"longitude":37.12348, "latitude":85.123456, "animation":4},
+{"longitude":37.12347, "latitude":85.123456, "animation":5},
+{"longitude":37.12346, "latitude":85.123456, "animation":6},
+{"longitude":37.12345, "latitude":85.123456, "animation":7},
+{"longitude":37.12346, "latitude":85.123456, "animation":8},
+{"longitude":37.12347, "latitude":85.123456, "animation":9},
+{"longitude":37.12345, "latitude":85.123456, "animation":10}
+]}
+
+
+// app itself
+- grab name of dogs from dropdown menu (get all pet names from server)
+- grab location data from api (make a db on calvin-llc.net with an api to access information)
+- store location data in a list 
+- display locations on a map (hopefully, maybe grab images automatically using google maps api?)
+- if it can't do that, then it needs to post it to a map making website somehow
+- found api stored in bookmarks, i can generate it programically. either google maps or other website
+
+
+// part of rubric, summarized. last page on this is important -> https://apcentral.collegeboard.org/pdf/ap21-sg-computer-science-principles.pdf?course=ap-computer-science-principles
+X lists actively used in a meaningful way
+X need one function with params
+X need to call function
+X make sure to explain functions in context of program
+X (I could re-create it? dunno if other people could though) explain well enough for people to be able to recreate
